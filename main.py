@@ -5,7 +5,7 @@ obtiuni = """
 2 - Goldbach
 3 - Determina varsta in functie de zile
 4 - Genereaza numere prime gemene
-5 - Produs factori
+5 - Produsul factorilor lui n
 6 - Calculeaza palindrom
 7 - Nr perfect mai mare ca n
 8 - Nr prim mai mic ca n
