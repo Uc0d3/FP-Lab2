@@ -6,7 +6,7 @@ obtiuni = """
 3 - Determina varsta in functie de zile
 4 - Genereaza numere prime gemene
 5 - Produsul factorilor lui n
-6 - Calculeaza palindrom
+6 - Calculeaza palindromul unui numar
 7 - Nr perfect mai mare ca n
 8 - Nr prim mai mic ca n
 9 - Nr perfect mai mic ca n
