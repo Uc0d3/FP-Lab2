@@ -1,4 +1,4 @@
-from PartA import *
+from Functions import *
 
 obtiuni = """
 1 - Genereaza umratorul numar prim
