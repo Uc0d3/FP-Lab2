@@ -37,7 +37,7 @@ while True:
             num = int(input("num="))
             print_godldbach_conjecture(num)
         if op == 3:
-            num = int(input("num="))
+            num = int(input("Years"))
             years = year_to_days(num)
             print(years)
         if op == 4:
