@@ -21,7 +21,7 @@ def print_godldbach_conjecture(n):
     if n % 2 != 0:
         print("Numarul nu este par")
         return
-    primes = [num for num in range(2, n) if is_prime(num)]
+    primes = [num for num in range(1, n) if is_prime(num)]
     for i in primes:
         for j in primes[0:len(primes) // 2 + 1]:
             if (i + j == n):
