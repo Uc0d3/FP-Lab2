@@ -45,7 +45,7 @@ def prime_sibling(n):
     prime_num = gen_prime_bigger(n)
     while True:
         if is_prime(prime_num + 2):
-            return [prime_num, prime_num + 2]
+            return prime_num, prime_num + 2
         prime_num = gen_prime_bigger(prime_num)
 
 

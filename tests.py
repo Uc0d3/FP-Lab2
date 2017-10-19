@@ -1,7 +1,6 @@
 from Functions import *
 
 
-
 def is_prime_test():
     assert is_prime(2) is True
     assert is_prime(1) is False
@@ -23,6 +22,24 @@ def gen_prime_bigger_test():
     print ("Gen prime bigger test passed")
 
 
+def year_to_days_test():
+    assert year_to_days(0) == 0
+    assert year_to_days(-1) is False
+    assert year_to_days(1) == 365
+    assert year_to_days(4) == 1461
+    print("Years to days test passed")
+
+
+def prime_sibling_test():
+    assert prime_sibling(10) == (11, 13)
+    assert prime_sibling(1) != (5, 7)
+    assert prime_sibling(4) == (5, 7)
+    assert prime_sibling(-10) == (3, 5)
+    print("Prime Sibling test passed")
+
+
 def run_tests():
     is_prime_test()
     gen_prime_bigger_test()
+    year_to_days_test()
+    prime_sibling_test()
