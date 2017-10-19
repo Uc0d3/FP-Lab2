@@ -117,7 +117,7 @@ Return False if no primes are present in list
 """
 def prime_list_product(nums):
     primes = [n for n in nums if is_prime(n)]
-    if len(primes) > 0:
+    if primes:
         return reduce(operator.mul, primes)
     return False
 
@@ -127,7 +127,7 @@ Return False if no primes are present in list
 """
 def prime_list_sum(nums):
     primes = [n for n in nums if is_prime(n)]
-    if len(primes) > 0:
+    if primes:
         return reduce(operator.add, primes)
     return False
 
@@ -137,7 +137,7 @@ Return False if no primes are present in list
 """
 def max_prime_list(nums):
     primes = [n for n in nums if is_prime(n)]
-    if len(primes) > 0:
+    if primes:
         return max(primes)
     return False
 
@@ -147,7 +147,7 @@ Return False if no primes are present in list
 """
 def min_prime_list(nums):
     primes = [n for n in nums if is_prime(n)]
-    if len(primes) > 0:
+    if primes:
         return min(primes)
     return False
 
@@ -158,6 +158,6 @@ Return False if no non-prime are present in list
 """
 def non_prime_list_sum(nums):
     non_primes = [n for n in nums if is_prime(n) is False]
-    if len(non_primes) > 0:
+    if non_primes:
         return reduce(operator.add, non_primes)
     return False
