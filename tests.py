@@ -38,8 +38,19 @@ def prime_sibling_test():
     print("Prime Sibling test passed")
 
 
+def get_dividers_test():
+    assert get_dividers(10) == [1, 2, 5]
+    assert get_dividers(8) == [1, 2, 4]
+    assert get_dividers(8) != [1, 2, 4, 8]
+    assert get_dividers(12) == [1, 2, 3, 4, 6]
+    assert get_dividers(19) == [1]
+    assert get_dividers(-10) == []
+    print("Get dividers test passed")
+
+
 def run_tests():
     is_prime_test()
     gen_prime_bigger_test()
     year_to_days_test()
     prime_sibling_test()
+    get_dividers_test()
