@@ -1,4 +1,8 @@
 from Functions import *
+from tests import run_tests
+
+run_tests()
+
 
 obtiuni = """
 1 - Genereaza umratorul numar prim
