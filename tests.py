@@ -48,9 +48,20 @@ def get_dividers_test():
     print("Get dividers test passed")
 
 
+def is_perfect_test():
+    assert is_perfect(0) is False
+    assert is_perfect(1) is False
+    assert is_perfect(6) is True
+    assert is_perfect(28) is True
+    assert is_perfect(496) is True
+    assert is_perfect(8128) is True
+    print("Is perfect test passed")
+
+
 def run_tests():
     is_prime_test()
     gen_prime_bigger_test()
     year_to_days_test()
     prime_sibling_test()
     get_dividers_test()
+    is_perfect_test()
