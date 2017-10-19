@@ -37,9 +37,12 @@ while True:
             num = int(input("num="))
             print_godldbach_conjecture(num)
         if op == 3:
-            num = int(input("Years"))
-            years = year_to_days(num)
-            print(years)
+            num = int(input("Years:"))
+            days = year_to_days(num)
+            if days is False:
+                print("Please input valid days")
+            else:
+                print(days)
         if op == 4:
             num = int(input("num="))
             siblings = prime_sibling(num)
